@@ -10,8 +10,8 @@ Prgm
 :If d<0 Then
 :  Disp "D=",d,char(10),"No solutions possible, because D is negative"
 :Else
-:  x1:=((−b-√(b^(2)-4*a*c))/(2*a))
-:  x2:=((−b+√(b^(2)-4*a*c))/(2*a))
+:  x1:=((−b-√(d))/(2*a))
+:  x2:=((−b+√(d))/(2*a))
 :
 :"Determine modulo for x1/x2 and also print decimal values if needed"
 :  x1mod:=mod(x1,1)
