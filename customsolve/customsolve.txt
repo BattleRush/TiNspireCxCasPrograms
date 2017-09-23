@@ -1,19 +1,29 @@
 Define LibPub customsolve(a,b,c)=
 Prgm
 :d:=b^(2)-4*a*c
+:
 :If d<0 Then
 :  Disp "D=",d,char(10),"No solutions possible, because D is negative"
 :Else
-:
 :  x1:=((−b-√(b^(2)-4*a*c))/(2*a))
-:
 :  x2:=((−b+√(b^(2)-4*a*c))/(2*a))
 :
-:  If x1≠x2 Then
-:    Disp "D=",d,char(10),"x₁=",x1,char(10),"x₂=",x2
-:  Else
-:    Disp "D=",d,char(10),"x₁=",x1
-:  EndIf
+:  "Determine modulo for x1/x2 and also print decimal values if needed"
+:  x1mod:=mod(x1,1)
+:  x2mod:=mod(x2,1)
 :
+:  If x1≠x2 Then
+:    If x1mod≠0 or x2mod≠0 Then
+:      Disp "D=",d,char(10),"x₁=",x1," => ",x1▶Decimal,char(10),"x₂=",x2," => ",x2▶Decimal
+:    Else
+:      Disp "D=",d,char(10),"x₁=",x1,char(10),"x₂=",x2
+:    EndIf
+:  Else
+:    If x1mod≠0 Then
+:      Disp "D=",d,char(10),"x₁=",x1," => ",x1▶Decimal
+:    Else
+:      Disp "D=",d,char(10),"x₁=",x1
+:    EndIf
+:  EndIf
 :EndIf
 :EndPrgm
