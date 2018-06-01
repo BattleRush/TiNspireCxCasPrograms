@@ -66,5 +66,30 @@ Prgm
 :
 :                     f2(x):=expr(string(asy))
 :
+:Disp "-----Manual Calc-----"
+:
+:Disp "(",a,") ÷ (",b,") = ",asy,"Rest ",polyRemainder(a,b)
+: polycf:=polyCoeffs(asy)
+: polycfcount:=dim(polycf)
+:
+:currentasy:=a
+:
+:For z,1,polycfcount,1
+:
+:curritem:=polycf[z]
+:currval:=expand(b*curritem*x^(polycfcount-z))
+:Disp "-(",currval,")"
+:Disp "________"
+:currentasy:=currentasy-currval
+:
+:If z=polycfcount Then
+:
+:Disp "Rest: ",currentasy
+:Else
+:Disp currentasy
+:EndIf
+:EndFor
+:
+:
 :
 :EndPrgm
