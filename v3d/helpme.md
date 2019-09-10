@@ -52,7 +52,7 @@ hnf(a,b,c,d,punkt)
 - Suche Abstand von Ebene zum Punkt
  
 ebenenormalform(vektorA, vektorB, punkt)
-- Erstellt Ebenengleichung aus 2 Vektoren und benutzt einen Punk um "d" zu bestimmen
+- Erstellt Ebenengleichung aus 2 Vektoren und benutzt einen Punkt um "d" zu bestimmen
 - Eingabe: ebenenormalform([x,y,z], [x,y,z], [x,y,z])
 
 ebenencrossgerad(a,b,c,d,punkt,richtung)
@@ -75,18 +75,18 @@ punktspiegebene(a,b,c,d,punkt)
 istpunktimkreis(mitteKreis,radius,punkt)
 - Bestimmt die Position eines Punktes relativ zum Kreis
 - WICHTIG: m ist der MittelPunkt des Kreises!!!
-- Radius ist im Quadrad -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
+- Radius ist im Quadrat -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
 istpunktimkreis([x,y,z],r,[x,y,z])
 
 linkreisschnit(mitteKreis,radius,punkt, richtung)
 - Berechnet Schnittpunkte von Gerade und Kreis
 - WICHTIG: m ist der MittelPunkt des Kreises!!!
-- Radius ist im Quadrad -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
+- Radius ist im Quadrat -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
 - punkt und richtung ist die Geradengleichung
 - Eingabe: linkreisschnit([x,y,z],r,[x,y,z], [x,y,z])
 
 tangentekreis(mitteKreis,radius,punkt)
 - Berechnet Tangentengleichung an einem Kreis bei bestimmten Punkt
 - WICHTIG: m ist der MittelPunkt des Kreises!!!
-- Radius ist im Quadrad -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
+- Radius ist im Quadrat -> Nicht Wurzel ziehen (r^(2)= 36, r = 6 -> Eingabe 36)
 - Eingabe tangentekreis([x,y,z],r,[x,y,z])
