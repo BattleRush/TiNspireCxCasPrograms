@@ -1,3 +1,3 @@
-# TiInspireCxCasPrograms
+# TiNspireCxCasPrograms
 
 Todo
